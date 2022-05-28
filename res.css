@@ -1,0 +1,16 @@
+@media only screen and (max-width: 680px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .button {
+    margin-bottom: 30px;
+    width: 30vw;
+    margin-top: 49px;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+    margin-top: 9vh;
+  }
+}
