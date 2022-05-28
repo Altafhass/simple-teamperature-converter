@@ -14,31 +14,26 @@
     <center>
         <h2>Temperature Converter</h2>
         <div class="wrapper">
-            <div class="container"><label for="">Kelvin</label>
-                <input class="kel" placeholder="kel" type="number">
+            <div class="container"><label for="">Celsius</label>
+                <input class="cel" placeholder="Celsius" type="number">
             </div>
             <div><button class="button button1">Cick To Convert</button></div>
-            <div class="container"><label for="">celsius</label>
-                <input class="cel" placeholder="cel" type="number">
+            <div class="container"><label for="">Farhenheit</label>
+                <input class="far" placeholder="Farhenheit" type="number">
             </div>
         </div>
 
         <script>
-            const kel = document.getElementsByClassName('kel')[0]
             const cel = document.getElementsByClassName('cel')[0]
+            const far = document.getElementsByClassName('far')[0]
             const button = document.querySelector('.button')
 
-            function kelToCel() {
-                const celsius = kel.value - 273.15
-                cel.value = celsius
+            function celToFar() {
+                const farhenheit = cel.value * 1.8 + 32
+                far.value = farhenheit
             }
 
-            button.addEventListener('click', kelToCel)
-
-
-
-            // const kelvin = '10'
-            // celsius = kelvin - 273.15
+            button.addEventListener('click', celToFar)
         </script>
     </center>
 </body>
