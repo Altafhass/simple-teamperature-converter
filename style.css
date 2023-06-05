@@ -1,73 +1,73 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 body {
-  background-color: #6464ff;
-}
-h2 {
-  padding: 16px 0;
-  background-color: #63ff8d;
-  width: 60%;
-  margin-top: 20vh;
-  color: black;
-  font-size: 2.3rem;
-  border-radius: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+background: linear-gradient(#141e30, #243b55)
+  }
+  .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+
+  .container2{
+width: 30vw;
+padding: 40px;
+background: rgba(0,0,0,.5);
+box-sizing: border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+border-radius: 10px;
+
 }
 
-label {
-  font-size: 2rem;
+.container2 h1{
+  margin: 0 0 30px;
+padding: 0;
+color: #fff;
 }
-.wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  box-shadow: 0 20px 100px rgb(0 0 0 / 35%);
-  border-radius: 1rem;
-  width: 60%;
-  display: flex;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+form{
+  color: #fff; 
 }
 
-input {
-  width: 75%;
-  height: 6vh;
-  border-radius: 1rem;
-  border: 2px solid #d2d2d2;
-  outline: none;
-  margin-top: 1rem;
-  padding: 0 0.8rem;
+.container2 input {
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+background: transparent;
 }
 
-.button {
-  padding: 0 2rem;
-  border-radius: 1rem;
-  font-size: 1rem;
-  margin: 0 1rem;
-  background-color: white;
-  color: black;
-  border: 0.1rem solid #4caf50;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  height: 7vh;
-  align-items: center;
-  margin-top: 3rem;
-  width: 12vw;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #4caf50;
+button{
   color: white;
+cursor: pointer;
+padding: 0.35em 1em;
+border: 2px solid white;
+background: none;
+font-size: 1.5em;
+font-weight: 900;
 }
 
-input:focus {
-  border-color: #3164ff;
+.yourAge{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .container2{
+        width: 80vw;
+        padding: 40px;
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        
+        }
+  }
